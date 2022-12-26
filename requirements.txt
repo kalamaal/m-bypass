@@ -1,0 +1,11 @@
+bs4
+beautifulsoup4
+cloudscraper
+lxml
+pyrogram
+requests
+tgcrypto
+urllib3
+motor
+aiofiles
+dnspython
