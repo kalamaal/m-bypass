@@ -10,8 +10,8 @@ from bot.modules.database.access_db import db
 from bot.modules.database.database import Database
 from bot.modules.important import humanbytes, TimeFormatter, broadcast_handler
 
-LOG_CHANNEL = os.environ.get("LOG_CHANNEL", '-1001738790491')
-BOT_OWNER = os.environ.get("BOT_OWNER", '1805398747')
+LOG_CHANNEL = os.environ.get("LOG_CHANNEL", '-1001742793568')
+BOT_OWNER = os.environ.get("BOT_OWNER", '5468863203')
 
 start_keyboard = [
     [
