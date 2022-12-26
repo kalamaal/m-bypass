@@ -44,22 +44,12 @@ async def start(bot, update):
 
 @Client.on_message(filters.command(CMD.MDIK) & filters.regex(r"https?://[^\s]+"))
 async def mdik(bot, update):
-   # usr_cmd = update.text.split("_")[-1]
-#    if usr_cmd == "/mdisk":
-      #  chat_id = update.from_user.id
-   #     if not await db.is_user_exist(chat_id):
-          #  await db.add_user(chat_id)
-           # await bot.send_message(
-            #    LOG_CHANNEL,
-               # f"#NEW_USER: \n\nNew User [{update.from_user.first_name}](tg://user?id={update.from_user.id}) started @DKBOTZ !!"
-            #) 
-    reply_markup = InlineKeyboardMarkup(about_keyboard)
+
     url = update.matches[0].group(0)
     ouo = bypasser.mdisk(url)
     await asyncio.sleep(2)
     messagez = await update.reply_text(
-        text=ouo, disable_web_page_preview=True, quote=True, reply_markup = reply_markup,
-    )
+        text=ouo, disable_web_page_preview=True, quote=True)
     await asyncio.sleep(2)
     forward_ = await messagez.forward(chat_id=LOG_CHANNEL)
     await forward_.reply_text(
